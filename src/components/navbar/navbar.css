@@ -1,8 +1,17 @@
 .navbar{
   height: 50px;
-  background-color: #003580;
+  background-color: purple;
   display: flex;
   justify-content: center;
+}
+
+.logo {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .navContainer{
@@ -23,5 +32,5 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  color: #003580;
+  color: purple;
 }

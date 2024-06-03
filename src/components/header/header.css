@@ -1,5 +1,5 @@
 .header {
-  background-color: #003580;
+  background-color: purple;
   color: white;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .headerBtn {
-  background-color: #0071c2;
+  background-color: purple;
   color: white;
   font-weight: 500;
   border: none;
@@ -66,6 +66,13 @@
   color: lightgray;
 }
 
+/* Specific styles for the icons in the search bar */
+.headerSearchItem .fa-calendar-days,
+.headerSearchItem .fa-person,
+.headerSearchItem .fa-bed {
+  color: black;
+}
+
 .headerSearchItem {
   display: flex;
   align-items: center;
@@ -78,7 +85,7 @@
 }
 
 .headerSearchText {
-  color: lightgray;
+  color: rgb(39, 39, 39);
   cursor: pointer;
 }
 
@@ -117,7 +124,7 @@
 .optionCounterButton {
   width: 30px;
   height: 30px;
-  border: 1px solid #0071c2;
+  border: 1px solid purple;
   color: #0071c2;
   cursor: pointer;
   background-color: white;

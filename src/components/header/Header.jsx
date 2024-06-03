@@ -14,6 +14,9 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
+import Box from "@mui/material/Box";
+import { LuFerrisWheel } from "react-icons/lu";
 
 const Header = ({ type }) => {
   const [destination, setDestination] = useState("");
@@ -68,7 +71,7 @@ const Header = ({ type }) => {
             <span>Car rentals</span>
           </div>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faBed} />
+            <LuFerrisWheel />
             <span>Attractions</span>
           </div>
           <div className="headerListItem">
@@ -83,9 +86,8 @@ const Header = ({ type }) => {
             </h1>
             <p className="headerDesc">
               Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              more with a free Bookify account
             </p>
-            <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
@@ -190,11 +192,23 @@ const Header = ({ type }) => {
                   </div>
                 )}
               </div>
-              <div className="headerSearchItem">
-                <button className="headerBtn" onClick={handleSearch}>
+              <Box className="headerSearchItem">
+                <Button
+                  variant="contained"
+                  className="headerBtn"
+                  onClick={handleSearch}
+                  sx={{
+                    backgroundColor: "#c1121f",
+                    color: "white",
+                    "&:hover": {
+                      backgroundColor: "#f72585",
+                      color: "white",
+                    },
+                  }}
+                >
                   Search
-                </button>
-              </div>
+                </Button>
+              </Box>
             </div>
           </>
         )}
