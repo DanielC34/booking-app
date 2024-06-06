@@ -1,61 +1,49 @@
 import "./featuredProperties.css";
+import Granada from "../../assets/granada.jpg";
+import LyonMetropole from "../../assets/lyonmetrople.jpg";
+import Lisboa from "../../assets/lisboa.jpg";
+import Luxembourg from "../../assets/luxembourg.jpg";
 
 const FeaturedProperties = () => {
   return (
     <div className="fp">
       <div className="fpItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=e148feeb802ac3d28d1391dad9e4cf1e12d9231f897d0b53ca067bde8a9d3355&o=&s=1"
-          alt=""
-          className="fpImg"
-        />
-        <span className="fpName">Aparthotel Stare Miasto</span>
-        <span className="fpCity">Madrid</span>
-        <span className="fpPrice">Starting from $120</span>
+        <img src={Granada} alt="Granada" className="fpImg" />
+        <span className="fpName">Gran Hotel Luna de Granada</span>
+        <span className="fpCity">Granada</span>
+        <span className="fpPrice">Starting from $210</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
         </div>
       </div>
       <div className="fpItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/215955381.jpg?k=ff739d1d9e0c8e233f78ee3ced82743ef0355e925df8db7135d83b55a00ca07a&o=&hp=1"
-          alt=""
-          className="fpImg"
-        />
-        <span className="fpName">Comfort Suites Airport</span>
-        <span className="fpCity">Austin</span>
-        <span className="fpPrice">Starting from $140</span>
+        <img src={LyonMetropole} alt="Lyon" className="fpImg" />
+        <span className="fpName">Hôtel Lyon Métropole</span>
+        <span className="fpCity">Lyon</span>
+        <span className="fpPrice">Starting from $240</span>
         <div className="fpRating">
-          <button>9.3</button>
+          <button>9.2</button>
           <span>Exceptional</span>
         </div>
       </div>
       <div className="fpItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232902339.jpg?k=3947def526b8af0429568b44f9716e79667d640842c48de5e66fd2a8b776accd&o=&hp=1"
-          alt=""
-          className="fpImg"
-        />
+        <img src={Lisboa} alt="Lisbon" className="fpImg" />
         <span className="fpName">Four Seasons Hotel</span>
         <span className="fpCity">Lisbon</span>
         <span className="fpPrice">Starting from $99</span>
         <div className="fpRating">
-          <button>8.8</button>
+          <button>8.6</button>
           <span>Excellent</span>
         </div>
       </div>
       <div className="fpItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/322658536.jpg?k=3fffe63a365fd0ccdc59210188e55188cdb7448b9ec1ddb71b0843172138ec07&o=&hp=1"
-          alt=""
-          className="fpImg"
-        />
-        <span className="fpName">Hilton Garden Inn</span>
-        <span className="fpCity">Berlin</span>
-        <span className="fpPrice">Starting from $105</span>
+        <img src={Luxembourg} alt="Luxembourg" className="fpImg" />
+        <span className="fpName">LÉGÈRE HOTEL Luxembourg</span>
+        <span className="fpCity">Luxembourg</span>
+        <span className="fpPrice">Starting from $205</span>
         <div className="fpRating">
-          <button>8.9</button>
+          <button>8.4</button>
           <span>Excellent</span>
         </div>
       </div>
